@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Author : George <GeorgeNiceWorld@gmail.com> | <Georgeinfo@163.com>
+Copyright (C) George (http://www.georgeinfo.com), All Rights Reserved.
+-->
+<beans>
+    <!-- Common Dao实现类 -->
+    <bean id="commonDaoImpl" class="com.georgeinfo.sms.jdbc.JdbcDao">
+    </bean>
+
+    <!-- Jdbc批量Dao实现类 -->
+    <bean id="batchDaoImpl" class="com.georgeinfo.sms.jdbc.JdbcBatchDao">
+    </bean>
+    
+    <!-- Jdbc分页实现类 -->
+    <bean id="pagingService" class="com.georgeinfo.sms.jdbc.JdbcPagingService">
+    </bean>
+</beans>

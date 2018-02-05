@@ -1,0 +1,83 @@
+/*
+Author : George <GeorgeNiceWorld@gmail.com> | <Georgeinfo@163.com>
+Copyright (C) George (http://www.georgeinfo.com), All Rights Reserved.
+*/
+/* 
+    Created on : 2015-6-27, 1:37:23
+    Author     : George <Georgeinfo@163.com>
+*/
+@charset "utf-8";
+/* Author: George <GeorgeNiceWorld@gmail.com> | www.georgeinfo.com */
+
+body {
+    font-size:16px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+body,td,th {
+    font-size: 16px;
+}
+
+
+/**  == 分页部分样式 开始 ===================== */
+.paginationActions {
+    height: 30px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: dotted #006699 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#slides span.pagination {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.pagination {
+    padding: 5px;
+    float: right;
+    margin-top: -6px;
+}
+
+.pagination a, .pagination a:link, .pagination a:visited {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #aaaadd;
+    text-decoration: none;
+    color: #006699;
+}
+
+.pagination a:hover, .pagination a:active {
+    border: 1px solid #006699;
+    color: #000;
+    text-decoration: none;
+}
+
+.pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #006699;
+    font-weight: bold;
+    background-color: #006699;
+    color: #FFF;
+}
+
+.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    color: #ddd;
+}
+.pagination span.infoLabel {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    color:#999999;
+}
+/**  == 分页部分样式 结束 ===================== */
