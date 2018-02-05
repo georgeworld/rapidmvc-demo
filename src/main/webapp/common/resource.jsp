@@ -5,3 +5,4 @@
 <!-- 引入 WeUI -->
 <link rel="stylesheet" href="<%=contextPath%>/resources/weui/css/weui.min.css"/>
 <link rel="stylesheet" href="<%=contextPath%>/resources/jqweui/css/jquery-weui.min.css">
+<link rel="icon" href="<%=contextPath%>/favicon.ico">

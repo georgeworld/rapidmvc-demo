@@ -78,9 +78,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav" style="display: inline-block;float: none;">
-                        <li class="active"><a href="#">老乔微博 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">老乔工作室</a></li>
-                        <li><a href="#">Github</a></li>
+                        <li class="active">
+                            <a href="<%=contextPath%>">回首页 </a>
+                        </li>
+                        <li class="active">
+                            <a href="https://weibo.com/georgeworld">老乔微博 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a href="http://www.georgeinfo.com">老乔工作室</a></li>
+                        <li><a href="https://github.com/georgeworld/rapidmvc">Github</a></li>
                             <%-- li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
