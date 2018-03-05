@@ -10,8 +10,6 @@
 %>
 <script src="<%=contextPath%>/resources/js/jquery-min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script src="<%=contextPath%>/resources/bootstrap/js/bootstrap.min.js" 
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-crossorigin="anonymous"></script>
+<script src="<%=contextPath%>/resources/bootstrap/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<%=contextPath%>/resources/bootstrap/js/ie10-viewport-bug-workaround.js"></script>

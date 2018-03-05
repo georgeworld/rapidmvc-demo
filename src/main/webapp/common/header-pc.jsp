@@ -10,10 +10,7 @@
 %>
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <!-- Bootstrap core CSS -->
-<link href="<%=contextPath%>/resources/bootstrap/css/bootstrap.min.css" 
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-      crossorigin="anonymous" 
-      rel="stylesheet">
+<link href="<%=contextPath%>/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <%-- 可选的 Bootstrap 主题文件（一般不用引入） -->
 <link rel="stylesheet" 
