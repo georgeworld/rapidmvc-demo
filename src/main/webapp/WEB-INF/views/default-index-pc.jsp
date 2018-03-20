@@ -263,11 +263,14 @@
             url: '<%=contextPath%>/home/user-center/json-test/George',
             data: {studio: "老乔软件工作室", website: "www.georgeinfo.com"},
             dataType: "json",
-            success: function (data) {
-                if (data.header.result === 200) {
-                    window.location.href = "<%=contextPath%>/home/default/index-pc";
+            success: function (msg) {
+                if (msg.header.result === 200) {
+                    window.alert("用户："
+                        +msg.data["用户名"]
+                        +"\n工作室："+msg.data["工作室"]
+                        +"\n网址："+msg.data["网址"]);
                 } else {
-                    alert(data.header.msgContent);
+                    alert(msg.header.msgContent);
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
