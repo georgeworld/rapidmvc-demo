@@ -149,13 +149,16 @@
                                         <div class="weui-grid__icon">
                                             <img src="<%=contextPath%>/resources/img/icon/icons_img_29.png" alt="">
                                         </div>
-                                        <p class="weui-grid__label">
+                                        <p class="weui-grid__label" onclick="window.location.href='<%=contextPath%>/home/user-center/login';">
                                             用
                                         </p>
                                     </a>
                                 </div>
 
 
+                                <a href="javascript:doJsonTest();" class="weui-btn weui-btn_primary">
+                                    服务端返回Json演示
+                                </a>
                                 <a href="<%=contextPath%>/home/user-center/login" class="weui-btn weui-btn_disabled weui-btn_default">退出</a>
                             </div>
                         </div>
@@ -211,6 +214,30 @@
                 });
 
                 $(item).css("color", "red");
+            }
+
+            function doJsonTest() {
+                $.ajax({
+                    type: "POST",
+                    //contentType: 'application/json', //如果加上这句，后台需要从http body中获取json字符串，手动处理参数
+                    url: '<%=contextPath%>/home/user-center/json-test/George',
+                    data: {studio: "老乔软件工作室", website: "www.georgeinfo.com"},
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.header.result === 200) {
+                            window.alert("用户："
+                                +msg.data["用户名"]
+                                +"\n工作室："+msg.data["工作室"]
+                                +"\n网址："+msg.data["网址"]);
+                        } else {
+                            alert(msg.header.msgContent);
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        //只有调试阶段，才放开错误提示
+                        alert("失败");
+                    }
+                });
             }
         </script>
     </body>
