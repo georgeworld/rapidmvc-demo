@@ -2,3 +2,6 @@ target
 nb-configuration.xml
 .idea
 *.iml
+.settings
+.classpath
+.project
